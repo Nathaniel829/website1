@@ -1,0 +1,51 @@
+h2.str1 {
+    color: darkblue;
+}
+
+.str2 {
+    color: chartreuse;
+}
+
+.color1 {
+    color: yellow;
+}
+
+.color2 {
+    color: deepskyblue;
+}
+
+.cool {
+    font-family: serif;
+}
+
+#thestyelh1 {
+    color: chocolate
+}
+
+h1 {
+    color: pink
+}
+
+.style1 {
+    list-style-type: none;
+    list-style-image: url(../Image/sadfrog.jpg);
+    background-color: chartreuse;
+    border: 3px dashed red;
+    border-radius: 20px;
+}
+
+.style2 {
+    list-style: none;
+    list-style: upper-roman;
+    background-color: hotpink;
+}
+
+.in {
+    background-color: cornflowerblue;
+    list-style-position: inside;
+}
+
+.out {
+    background-color: cornflowerblue;
+    list-style-position: outside;
+}
