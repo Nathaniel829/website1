@@ -26,7 +26,7 @@
         }
 
         .t1 {
-            /* border: 1px solid red; */
+            border: 1px solid red;
             width: 150px;
             float: left;
             text-align: center;
@@ -35,6 +35,13 @@
         .selectboxstyle {
             transform: scale(2.0);
         }
+
+        fieldset {
+            width: 60%;
+            border: 3px solid #004B97;
+            border-radius: 20px;
+            margin: 0 auto;
+        }
     </style>
 
 
@@ -42,52 +49,63 @@
 
 <body>
     <form action="#" method="post" enctype="">
-        <div class="str1">
-            <label class="t1" for="account">姓名:</label>
-            <input type="text" id="account" name="account" value="guest">
-        </div>
-        <div class="str1">
-            <label><input class="selectboxstyle" type="radio" name="gender" value="male">男
-            </label>
-            <label><input class="selectboxstyle" type="radio" name="gender" value="female">女</label>
-        </div>
-        <div class="str1">
-            <label><input class="selectboxstyle" type="checkbox" name="hobby" value="music">音樂</label>
-            <label><input class="selectboxstyle" type="checkbox" name="hobby" value="sport">運動</label>
-            <label><input class="selectboxstyle" type="checkbox" name="hobby" value="read">閱讀</label>
-            <label><input class="selectboxstyle" type="checkbox" name="hobby" value="movie">電影</label>
-        </div>
-        <div class="str1">
-            <label for="ImageFile">照片:</label>
-            <input type="file" name="file" id="ImageFile" accept="image/*">
-        </div>
-        <div class="str1">
-            <label for="">城市名稱:</label>
-            <select name="City" id="">
-                <option value="TPE">台北市</option>
-                <option value="NTP">新北市</option>
-                <option value="TYU">桃園市</option>
-                <option value="HSC">新竹市</option>
-            </select>
-        </div>
-        <div class="str1">
-            <label for="address">詳細地址:</label>
-            <input type="text" id="address" name="address" size="20">
-        </div>
-        <div class="str1">
-            <label class="t1" for="pwd">密碼:</label>
-            <input type="password" id="pwd" name="pwd" maxlength="6">
-        </div>
-        <div class="str1">
-            <label class="t1" for="suggest">意見:</label>
-            <textarea cols="40" rows="5" name="suggest" id="suggest"></textarea>
-        </div>
-        <div class="str2">
-            <input type="submit" value="送出">
-            <input type="reset" value="清除">
-            <input type="button" name="button1" id="button1" value="按鈕">
-        </div>
+        <fieldset>
+            <legend>個人檔案一</legend>
+            <div class="str1">
+                <label class="t1" for="account">姓名:</label>
+                <input type="text" id="account" name="account" value="guest">
+            </div>
+            <div class="str1">
+                <label class="t1" for="pwd">密碼:</label>
+                <input type="password" id="pwd" name="pwd" maxlength="6">
+            </div>
+            <div class="str1">
+                <label class="t1">性別:</label>
+                <label><input class="selectboxstyle" type="radio" name="gender" value="male">男
+                </label>
+                <label><input class="selectboxstyle" type="radio" name="gender" value="female">女</label>
+            </div>
+            <div class="str1">
+                <label class="t1">興趣:</label>
+                <label><input class="selectboxstyle" type="checkbox" name="hobby" value="music">音樂</label>
+                <label><input class="selectboxstyle" type="checkbox" name="hobby" value="sport">運動</label>
+                <label><input class="selectboxstyle" type="checkbox" name="hobby" value="read">閱讀</label>
+                <label><input class="selectboxstyle" type="checkbox" name="hobby" value="movie">電影</label>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>詳細資料</legend>
+            <div class="str1">
+                <label class="t1" for="ImageFile">照片:</label>
+                <input type="file" name="file" id="ImageFile" accept="image/*">
+            </div>
 
+            <div class="str1">
+                <label class="t1" for="">城市名稱:</label>
+                <select name="City" id="">
+                    <option value="TPE">台北市</option>
+                    <option value="NTP">新北市</option>
+                    <option value="TYU">桃園市</option>
+                    <option value="HSC">新竹市</option>
+                </select>
+            </div>
+            <div class="str1">
+                <label class="t1" for="address">詳細地址:</label>
+                <input type="text" id="address" name="address" size="20">
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>個人檔案二</legend>
+            <div class="str1">
+                <label class="t1" for="suggest">意見:</label>
+                <textarea style="size:20px;" cols="40" rows="5" name="suggest" id="suggest"></textarea>
+            </div>
+            <div class="str2">
+                <input type="submit" value="送出">
+                <input type="reset" value="清除">
+                <input type="button" name="button1" id="button1" value="按鈕">
+            </div>
+        </fieldset>
     </form>
 
 </body>
