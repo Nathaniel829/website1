@@ -53,7 +53,7 @@
             <legend>個人檔案一</legend>
             <div class="str1">
                 <label class="t1" for="account">姓名:</label>
-                <input type="text" id="account" name="account" value="guest">
+                <input type="text" id="account" name="account" placeholder="Username" autofocus>
             </div>
             <div class="str1">
                 <label class="t1" for="pwd">密碼:</label>
@@ -80,13 +80,13 @@
         <fieldset>
             <legend>詳細資料</legend>
             <div class="str1">
-                <label class="t1" for="ImageFile">照片:</label>
-                <input type="file" name="file" id="ImageFile" accept="image/*">
+                <label class="t1" for="">照片:</label>
+                <input type="file" name="file" id="ImageFile" accept="image/*" multiple>
             </div>
 
             <div class="str1">
                 <label class="t1" for="">城市名稱:</label>
-                <select name="City" id="">
+                <select name="City" id="" size="2" multiple>
                     <option value="TPE">台北市</option>
                     <option value="NTP">新北市</option>
                     <option value="TYU">桃園市</option>
@@ -101,13 +101,23 @@
         <fieldset>
             <legend>個人檔案二</legend>
             <div class="str1">
+                <label for="" class="t1">喜歡的食物</label>
+                <input type="text" name="fruit" list="fruitlist">
+                <datalist id="fruitlist">
+                    <option value="apple">im</option>
+                    <option value="watermelon"></option>
+                    <option value="banana"></option>
+                </datalist>
+            </div>
+            <div class="str1">
                 <label class="t1" for="suggest">意見:</label>
-                <textarea style="width: 70%;" cols="40" rows="5" name="suggest" id="suggest"></textarea>
+                <textarea style="width: 70%;" cols="40" rows="5" name="suggest" id="suggest"
+                    readonly>好人你幫幫人民的啦</textarea>
             </div>
             <div class="str2">
                 <input type="submit" value="送出">
                 <input type="reset" value="清除">
-                <input type="button" name="button1" id="button1" value="按鈕">
+                <input type="button" name="button1" id="button1" value="按鈕" disabled>
             </div>
         </fieldset>
     </form>

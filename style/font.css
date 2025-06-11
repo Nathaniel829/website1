@@ -1,0 +1,29 @@
+ @import url('https://fonts.googleapis.com/css2?family=Matemasie&display=swap');
+
+ @font-face {
+     src: url(../fonts/SCRIPTIN.ttf);
+     font-family: font1;
+ }
+
+ .cooool {
+     font-family: "Matemasie", sans-serif;
+     font-weight: 400;
+     font-style: normal;
+ }
+
+ .cute {
+     font-family: "Matemasie", sans-serif;
+ }
+
+ @font-face {
+     src: url(../fonts/JustOldFashion.ttf);
+     font-family: font2;
+ }
+
+ .font2 {
+     font-family: font2;
+ }
+
+ .font1 {
+     font-family: font1;
+ }
