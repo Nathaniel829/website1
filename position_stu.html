@@ -11,7 +11,6 @@
         .static1 {
             position: static;
             border: 3px solid purple;
-
         }
 
         .relative1 {
@@ -23,24 +22,29 @@
         .relative2 {
             width: 600px;
             position: relative;
+            top: 50px;
+            left: 600px;
             /* 請加上top or lef or right or bottom來調整邊界的距離 */
 
 
             border: 3px solid red;
             background-color: #dfa5a5;
+
         }
 
         .fixed1 {
             /* 請加上position:fixed 以及top or lef or right or bottom來調整邊界的距離 */
-
+            position: fixed;
+            right: 0;
+            bottom: 0;
             width: 200px;
             border: 3px solid #9999CC;
 
         }
 
         .relative3 {
-            /* position: relative;  */
-            position: static;
+            position: relative;
+            /* position: static; */
             width: 600px;
             height: 400px;
             border: 3px solid #0080FF;
@@ -48,10 +52,11 @@
 
         .absolute1 {
             /* 請加上position:absolute 以及top or lef or right or bottom來調整邊界的距離 */
-
+            position: absolute;
             width: 300px;
             height: 150px;
             border: 3px solid #FF8040;
+            right: 50px;
         }
     </style>
     <script>
