@@ -6,6 +6,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Module17</title>
     <style>
+        .list {
+            border: 1px solid blue;
+            background-color: greenyellow;
+            overflow: auto;
+            list-style-type: none;
+        }
+
+        .list li {
+            float: left;
+            width: 7em;
+            border: 1px solid red;
+        }
+
+        .list li a {
+            display: block;
+            text-align: center;
+        }
+
+        .list li a:hover {
+            background-color: #fff;
+
+        }
+
+        .st3 {
+            width: 100px;
+            height: 100px;
+            border: 1px solid red;
+            overflow: auto;
+        }
+
         .box {
             background-color: yellow;
         }
@@ -16,18 +46,19 @@
 
         .span2 {
             /* 請在這裡加上visibility屬性，並將span2設為隱藏 */
-
+            visibility: hidden;
+            /* display: none; */
         }
 
 
         .box:hover .span1 {
             /* 請在這裡加上display屬性將span1設為消失 */
-
+            display: none;
         }
 
         .box:hover .span2 {
             /* 請在這裡加上visibility屬性將span2設為顯示 */
-
+            visibility: visible;
         }
     </style>
 
@@ -36,12 +67,28 @@
 </head>
 
 <body>
+
+    <ul class="list">
+        <li><a href="index.html">首頁</a></li>
+        <li><a href="list.html">清單列表</a></li>
+        <li><a href="mailto:nathaniel561003@gmail.com">寄信給我</a></li>
+        <li><a href="CSSstyle.html">CSSSSSSSSSS</a></li>
+    </ul>
+
     <div class="box">
         <span class="span1">span1</span>
         <label for="" class="label1">
             <span class="span2">span2</span>
         </label>
     </div>
+    <div class="st3"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo soluta nobis quod, ex perferendis,
+        ipsum sint esse in illo vitae sunt labore odit voluptatem quia accusamus voluptate porro quaerat assumenda totam
+        optio doloremque. Autem harum adipisci esse eaque consequuntur soluta ad hic corrupti rerum ullam, aliquid ipsa
+        blanditiis accusantium officia. Perferendis quam quibusdam harum accusamus voluptatibus unde nesciunt atque
+        deserunt dicta inventore temporibus perspiciatis dolores, natus deleniti? Architecto odit facilis alias aperiam
+        reiciendis soluta, officia aut a veniam explicabo magni repellat ad? Aut, soluta. Iusto, provident consequuntur
+        vero quia ea, error, ipsum facere delectus adipisci sequi dicta maiores ullam tenetur?</div>
+
 
 </body>
 
